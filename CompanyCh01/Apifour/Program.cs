@@ -10,6 +10,7 @@ namespace Apifour
             //readTextBox.Undo();
             ((IUndoable)readTextBox).Undo();
             //((TextBox)readTextBox).Undo();
+
         }
     }
 }
