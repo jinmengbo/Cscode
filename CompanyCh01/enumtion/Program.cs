@@ -52,7 +52,16 @@ namespace enumtion
             Console.WriteLine($"{(int)side}");
             var leftOrRight = (int)side >= 2;
             Console.WriteLine($"{leftOrRight}");
-           
+            LogEn logEn = LogEn.left | LogEn.Right;
+            if ((logEn&LogEn.left)!=0)
+                Console.WriteLine("包含左");
+            LogEn s = LogEn.left;
+            string formatted = logEn.ToString();
+            Console.WriteLine($"{formatted}");
+            s |= LogEn.Right;
+            Console.WriteLine(s == logEn) ;
+            s ^= LogEn.Right;
+            Console.WriteLine(s);
         }
     }
 }
