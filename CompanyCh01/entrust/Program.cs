@@ -8,7 +8,7 @@ namespace entrust
         static void Main(string[] args)
         {
             // 创建一个Square的实例,这个语句其实就是下边这个
-            //Transformer transformer = new Transformer (Square); 和下边语句通宵过
+            //Transformer transformer = new Transformer (Square); 和下边语句同样效果
             //Transformer t = Square;
             //var result = t(3);
             //Console.WriteLine(result);
