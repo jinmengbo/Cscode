@@ -4,13 +4,11 @@ using System.Text;
 
 namespace GenEric
 {
-    class Stack
+    class Stack<T>
     {
-        //int position;
-        //T[] data = new T[100];
-        //public void Push(T obj) => data[position++] = obj;
-        //public T Pop() => data[--position];
-        public virtual object Pop() { }
-        public virtual void Push(object obj) { }
+       int position;
+        T[] data = new T[100];
+        public T Push(T obj) => data[++position]=obj;
+        public T Pop() => data[--position];
     }
 }
